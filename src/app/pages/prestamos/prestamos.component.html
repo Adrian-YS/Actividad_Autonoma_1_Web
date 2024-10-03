@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Préstamos de Libros - Biblioteca Online</title>
+</head>
+<body>
+    
+
+    <div class="content">
+        <h1>Solicitar Préstamo de Libro</h1>
+        <form action="/submit-prestamo" method="POST">
+            <label for="user-name">Nombre del usuario:</label>
+            <input type="text" id="user-name" name="user-name" required>
+
+            <label for="book-title">Título del libro:</label>
+            <select id="book-title" name="book-title" required>
+                <option value="">Selecciona un libro</option>
+                <option value="Matar a un Ruiseñor">Matar a un Ruiseñor</option>
+                <option value="La Metamorfosis">La Metamorfosis</option>
+                <option value="Fahrenheit 451">Fahrenheit 451</option>
+                <option value="Jane Eyre">Jane Eyre</option>
+                <option value="El Señor de los Anillos: La Comunidad del Anillo">El Señor de los Anillos: La Comunidad del Anillo</option>
+                <option value="Los Miserables">Los Miserables</option>
+                <option value="El Retrato de Dorian Gray">El Retrato de Dorian Gray</option>
+                <option value="Harry Potter y la Piedra Filosofal">Harry Potter y la Piedra Filosofal</option>
+            </select>
+
+            <label for="loan-date">Fecha de préstamo:</label>
+            <input type="date" id="loan-date" name="loan-date" required>
+
+            <label for="return-date">Fecha de devolución:</label>
+            <input type="date" id="return-date" name="return-date" required>
+
+            <button type="submit">Solicitar Préstamo</button>
+        </form>
+
+        <div class="books-list">
+            <h1>Libros Disponibles</h1>
+            <div class="book">
+                <div>
+                    <h2>Matar a un Ruiseñor</h2>
+                    <p>Autor: Harper Lee</p>
+                </div>
+                <button type="button">Solicitar Préstamo</button>
+            </div>
+            
+            <div class="book">
+                <div>
+                    <h2>La Metamorfosis</h2>
+                    <p>Autor: Franz Kafka</p>
+                </div>
+                <button type="button">Solicitar Préstamo</button>
+            </div>
+            
+            <div class="book">
+                <div>
+                    <h2>Fahrenheit 451</h2>
+                    <p>Autor: Ray Bradbury</p>
+                </div>
+                <button type="button">Solicitar Préstamo</button>
+            </div>
+            
+            <div class="book">
+                <div>
+                    <h2>Jane Eyre</h2>
+                    <p>Autor: Charlotte Brontë</p>
+                </div>
+                <button type="button">Solicitar Préstamo</button>
+            </div>
+            
+            <div class="book">
+                <div>
+                    <h2>El Señor de los Anillos: La Comunidad del Anillo</h2>
+                    <p>Autor: J.R.R. Tolkien</p>
+                </div>
+                <button type="button">Solicitar Préstamo</button>
+            </div>
+            
+            <div class="book">
+                <div>
+                    <h2>Los Miserables</h2>
+                    <p>Autor: Victor Hugo</p>
+                </div>
+                <button type="button">Solicitar Préstamo</button>
+            </div>
+            
+            <div class="book">
+                <div>
+                    <h2>El Retrato de Dorian Gray</h2>
+                    <p>Autor: Oscar Wilde</p>
+                </div>
+                <button type="button">Solicitar Préstamo</button>
+            </div>
+            
+            <div class="book">
+                <div>
+                    <h2>Harry Potter y la Piedra Filosofal</h2>
+                    <p>Autor: J.K. Rowling</p>
+                </div>
+                <button type="button">Solicitar Préstamo</button>
+            </div>
+            
+        </div>
+    </div>
+
+   
+</body>
+</html>
